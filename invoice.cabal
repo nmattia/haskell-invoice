@@ -1,0 +1,25 @@
+name:                invoice
+version:             0.0.0.1
+synopsis:            invoice template
+build-type:          Simple
+cabal-version:       >=1.8
+homepage:            http://github.com/nmattia/haskell-invoice
+license:             MIT
+license-file:        LICENSE
+author:              Nicolas Mattia
+maintainer:          nicolas@nmattia.com
+copyright:           2017 Nicolas Mattia
+
+executable invoice
+  hs-source-dirs:    .
+  main-is:           Main.hs
+  other-modules:     Style
+  ghc-options:       -Wall
+  Build-depends:     base >= 4.0 && < 5,
+                     bytestring,
+                     clay,
+                     containers,
+                     lucid,
+                     text,
+                     text-format,
+                     lens
