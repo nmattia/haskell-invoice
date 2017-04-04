@@ -12,4 +12,5 @@ $ stack build && stack exec invoice -- oct-2016 | wkhtmltopdf - oct-2016.pdf
 ```
 
 The `invoice` executable will generate the HTML invoice. `wkhtmltopdf` reads it
-from stdin and transforms it into a PDF.
+from stdin and transforms it into a PDF. You can find an example generated file
+[here](./oct-2016.pdf).
